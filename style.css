@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    /* Mudando o fundo da página para preto */
+    color: #F8F8FA;
+    /* Mudando a cor do texto para branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: solid 1px #353537;
+    background-color: #1C1C1E;
+    /* Cor de fundo da caixa com transparência */
+    border-radius: 20px;
+    /* Adicionando bordas arredondadas */
+    padding: 20px 50px;
+}
+
+.content {
+    text-align: center;
+}
+
+.ios-switch label,
+.ios-switch .toggle {
+    caret-color: transparent;
+}
+
+.ios-switch {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    label {
+        display: inline-flex;
+
+        margin-left: 20px;
+        font-size: 28px;
+    }
+
+    .switch-body {
+        border: solid 3px #39383D;
+        border-radius: 999px;
+        display: inline-flex;
+        justify-content: flex-start;
+        cursor: pointer;
+        width: 96px;
+        background-color: #39383D;
+        box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+
+        .toggle {
+            border-radius: 50%;
+
+            width: 48px;
+            height: 48px;
+            background-color: white;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+            box-sizing: border-box;
+            transition: transform 0.4s ease;
+        }
+    }
+
+    &.active .switch-body {
+        background-color: #2FD159;
+        border: solid 3px #2FD159;
+
+        .toggle {
+            transform: translateX(100%);
+        }
+    }
+}
+
+footer {
+    position: fixed;    /* Fixando o rodapé */
+    bottom: 0;    /* Posicionando-o no final da página */
+    width: 100%;    /* Definindo a largura para ocupar toda a largura da tela */
+    color: #39383D;    /* Alterando a cor do texto para branco */
+    text-align: center;    /* Centralizando o conteúdo do footer */
+    padding: 20px 0;    /* Adicionando espaço interno ao footer */
+}
